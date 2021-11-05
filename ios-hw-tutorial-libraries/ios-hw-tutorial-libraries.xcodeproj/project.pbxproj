@@ -15,6 +15,7 @@
 		DCED6C56273562860072860E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCED6C54273562860072860E /* LaunchScreen.storyboard */; };
 		DCED6CA727356DAD0072860E /* MyLogger1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCED6CA0273569FD0072860E /* MyLogger1.framework */; };
 		DCED6CA827356DAD0072860E /* MyLogger1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DCED6CA0273569FD0072860E /* MyLogger1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DCED6CAF273573490072860E /* MyLogger2 in Frameworks */ = {isa = PBXBuildFile; productRef = DCED6CAE273573490072860E /* MyLogger2 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		DCED6C55273562860072860E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCED6C57273562860072860E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCED6C9B273569FD0072860E /* MyLogger1.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MyLogger1.xcodeproj; path = ../MyLogger1/MyLogger1.xcodeproj; sourceTree = "<group>"; };
+		DCED6CAB273572B10072860E /* MyLogger2 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MyLogger2; path = ../MyLogger2; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCED6CA727356DAD0072860E /* MyLogger1.framework in Frameworks */,
+				DCED6CAF273573490072860E /* MyLogger2 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +71,7 @@
 		DCED6C3D273562850072860E = {
 			isa = PBXGroup;
 			children = (
+				DCED6CAA273572B10072860E /* Packages */,
 				DCED6C9B273569FD0072860E /* MyLogger1.xcodeproj */,
 				DCED6C48273562850072860E /* ios-hw-tutorial-libraries */,
 				DCED6C47273562850072860E /* Products */,
@@ -112,6 +116,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DCED6CAA273572B10072860E /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				DCED6CAB273572B10072860E /* MyLogger2 */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,6 +141,9 @@
 			dependencies = (
 			);
 			name = "ios-hw-tutorial-libraries";
+			packageProductDependencies = (
+				DCED6CAE273573490072860E /* MyLogger2 */,
+			);
 			productName = "ios-hw-tutorial-libraries";
 			productReference = DCED6C46273562850072860E /* ios-hw-tutorial-libraries.app */;
 			productType = "com.apple.product-type.application";
@@ -422,6 +437,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DCED6CAE273573490072860E /* MyLogger2 */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MyLogger2;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DCED6C3E273562850072860E /* Project object */;
 }
