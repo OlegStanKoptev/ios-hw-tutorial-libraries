@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MyLogger1
 
 class ViewController: UIViewController {
 
@@ -15,6 +16,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func logFromFramework(_ sender: Any) {
+        MyLogger1.log("hello, world")
     }
     @IBAction func logFromSwiftPackage(_ sender: Any) {
     }
