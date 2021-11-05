@@ -8,6 +8,7 @@
 import UIKit
 import MyLogger1
 import MyLogger2
+import MyLogger3
 
 class ViewController: UIViewController {
 
@@ -23,6 +24,7 @@ class ViewController: UIViewController {
         MyLogger2.log("hello, world")
     }
     @IBAction func logFromPod(_ sender: Any) {
+        MyLogger3.log("hello, world")
     }
     @IBAction func logFromCarthage(_ sender: Any) {
     }
