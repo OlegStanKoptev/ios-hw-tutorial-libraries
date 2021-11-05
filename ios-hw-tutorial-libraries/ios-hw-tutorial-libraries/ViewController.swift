@@ -14,6 +14,14 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func logFromFramework(_ sender: Any) {
+    }
+    @IBAction func logFromSwiftPackage(_ sender: Any) {
+    }
+    @IBAction func logFromPod(_ sender: Any) {
+    }
+    @IBAction func logFromCarthage(_ sender: Any) {
+    }
+    
 }
 
